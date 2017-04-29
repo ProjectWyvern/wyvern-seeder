@@ -401,7 +401,7 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {"194.135.95.138", "mainnet.wyvern.ch", "seed.projectwyvern.com", ""};
-static const string testnet_seeds[] = {"testnet.wyvern.ch", ""};
+static const string testnet_seeds[] = {"testnet.wyvern.ch", "194.135.95.138"};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
