@@ -110,7 +110,7 @@ bool static LookupIntern(const char *pszName, std::vector<CNetAddr>& vIP, unsign
 
 bool LookupHost(const char *pszName, std::vector<CNetAddr>& vIP, unsigned int nMaxSolutions, bool fAllowLookup)
 {
-    if (pszName[0] == 0)
+    if (pszName == NULL || pszName[0] == 0)
         return false;
     char psz[256];
     char *pszHost = psz;

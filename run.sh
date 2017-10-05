@@ -2,4 +2,8 @@
 
 echo "Launching DNS seeder with args $@"
 
-./dnsseed $@
+while true; do
+  ./dnsseed $@
+  echo "$(date) Restarting in 1s..."
+  sleep 1
+done
